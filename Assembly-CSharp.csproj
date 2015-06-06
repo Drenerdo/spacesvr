@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{4E1EE940-CB1F-D603-7050-73655D2C3614}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_5_0_2;UNITY_5_0;UNITY_5;ENABLE_LICENSE_RENAME;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_NEW_HIERARCHY;ENABLE_PHYSICS;ENABLE_PHYSICS_PHYSX3;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_AUDIOMIXER_SUSPEND;ENABLE_NONPRO;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;UNITY_WEBPLAYER;ENABLE_SUBSTANCE;WEBPLUG;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_MONO;DEVELOPMENT_BUILD;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Cardboard\DemoScene\Teleport.cs" />
+     <Compile Include="Assets\Cardboard\Legacy\DemoScene\TeleportLegacyUI.cs" />
+     <Compile Include="Assets\Cardboard\Legacy\Scripts\CardboardAndroidDevice.cs" />
+     <Compile Include="Assets\Cardboard\Legacy\Scripts\CardboardOnGUI.cs" />
+     <Compile Include="Assets\Cardboard\Legacy\Scripts\CardboardOnGUIMouse.cs" />
+     <Compile Include="Assets\Cardboard\Legacy\Scripts\CardboardOnGUIWindow.cs" />
+     <Compile Include="Assets\Cardboard\Legacy\Scripts\SkyboxMesh.cs" />
+     <Compile Include="Assets\Cardboard\Legacy\Scripts\StereoLensFlare.cs" />
+     <Compile Include="Assets\Cardboard\Scripts\Cardboard.cs" />
+     <Compile Include="Assets\Cardboard\Scripts\CardboardEye.cs" />
+     <Compile Include="Assets\Cardboard\Scripts\CardboardHead.cs" />
+     <Compile Include="Assets\Cardboard\Scripts\CardboardProfile.cs" />
+     <Compile Include="Assets\Cardboard\Scripts\CardboardUILayer.cs" />
+     <Compile Include="Assets\Cardboard\Scripts\GazeInputModule.cs" />
+     <Compile Include="Assets\Cardboard\Scripts\Pose3D.cs" />
+     <Compile Include="Assets\Cardboard\Scripts\RadialUndistortionEffect.cs" />
+     <Compile Include="Assets\Cardboard\Scripts\StereoController.cs" />
+     <Compile Include="Assets\Cardboard\Scripts\VRDevices\AndroidBaseVRDevice.cs" />
+     <Compile Include="Assets\Cardboard\Scripts\VRDevices\AndroidVRDevice.cs" />
+     <Compile Include="Assets\Cardboard\Scripts\VRDevices\BaseVRDevice.cs" />
+     <Compile Include="Assets\Cardboard\Scripts\VRDevices\UnityEditorDevice.cs" />
+     <Compile Include="Assets\Cardboard\Scripts\VRDevices\VRDevice.cs" />
+     <Compile Include="Assets\Cardboard\Scripts\VRDevices\iOSVRDevice.cs" />
+     <Compile Include="Assets\OVR\Moonlight\Scripts\OVROverlay.cs" />
+     <Compile Include="Assets\OVR\Moonlight\Scripts\OVRPlatformMenu.cs" />
+     <Compile Include="Assets\OVR\Moonlight\Scripts\OVRPostRender.cs" />
+     <Compile Include="Assets\OVR\Moonlight\Scripts\OVRTouchpad.cs" />
+     <Compile Include="Assets\OVR\Moonlight\Scripts\OVRVolumeControl.cs" />
+     <Compile Include="Assets\OVR\Moonlight\Scripts\Utils\OVRChromaticAberration.cs" />
+     <Compile Include="Assets\OVR\Moonlight\Scripts\Utils\OVRDebugGraph.cs" />
+     <Compile Include="Assets\OVR\Moonlight\Scripts\Utils\OVRDebugUtils.cs" />
+     <Compile Include="Assets\OVR\Moonlight\Scripts\Utils\OVRGameUtils.cs" />
+     <Compile Include="Assets\OVR\Moonlight\Scripts\Utils\OVRInputControl.cs" />
+     <Compile Include="Assets\OVR\Moonlight\Scripts\Utils\OVRMathUtils.cs" />
+     <Compile Include="Assets\OVR\Moonlight\Scripts\Utils\OVRModeParms.cs" />
+     <Compile Include="Assets\OVR\Moonlight\Scripts\Utils\OVRMonoscopic.cs" />
+     <Compile Include="Assets\OVR\Moonlight\Scripts\Utils\OVRResetOrientation.cs" />
+     <Compile Include="Assets\OVR\Moonlight\Scripts\Utils\OVRTimeWarpUtils.cs" />
+     <Compile Include="Assets\OVR\Moonlight\Scripts\Utils\OVRWaitCursor.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRCameraRig.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRCommon.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRDisplay.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRManager.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRPluginEvent.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRTracker.cs" />
+     <Compile Include="Assets\OVR\Scripts\OVRUnityVersionChecker.cs" />
+     <Compile Include="Assets\OVR\Scripts\OvrCapi.cs" />
+     <Compile Include="Assets\OVR\Scripts\Util\OVRCrosshair.cs" />
+     <Compile Include="Assets\OVR\Scripts\Util\OVRDebugInfo.cs" />
+     <Compile Include="Assets\OVR\Scripts\Util\OVRGUI.cs" />
+     <Compile Include="Assets\OVR\Scripts\Util\OVRGamepadController.cs" />
+     <Compile Include="Assets\OVR\Scripts\Util\OVRGridCube.cs" />
+     <Compile Include="Assets\OVR\Scripts\Util\OVRPlayerController.cs" />
+     <Compile Include="Assets\OVR\Scripts\Util\OVRSceneSampleController.cs" />
+     <Compile Include="Assets\OVR\Scripts\Util\OVRScreenFade.cs" />
+     <Compile Include="Assets\OVR\Scripts\Util\OVRTrackerBounds.cs" />
+     <Compile Include="Assets\Time of Day\Assets\Scripts\Doxyfile.cs" />
+     <Compile Include="Assets\Time of Day\Assets\Scripts\TOD_Animation.cs" />
+     <Compile Include="Assets\Time of Day\Assets\Scripts\TOD_Attributes.cs" />
+     <Compile Include="Assets\Time of Day\Assets\Scripts\TOD_Camera.cs" />
+     <Compile Include="Assets\Time of Day\Assets\Scripts\TOD_Components.cs" />
+     <Compile Include="Assets\Time of Day\Assets\Scripts\TOD_Enums.cs" />
+     <Compile Include="Assets\Time of Day\Assets\Scripts\TOD_ImageEffect.cs" />
+     <Compile Include="Assets\Time of Day\Assets\Scripts\TOD_Parameters.cs" />
+     <Compile Include="Assets\Time of Day\Assets\Scripts\TOD_Rays.cs" />
+     <Compile Include="Assets\Time of Day\Assets\Scripts\TOD_Resources.cs" />
+     <Compile Include="Assets\Time of Day\Assets\Scripts\TOD_Scattering.cs" />
+     <Compile Include="Assets\Time of Day\Assets\Scripts\TOD_Sky+API.cs" />
+     <Compile Include="Assets\Time of Day\Assets\Scripts\TOD_Sky+Settings.cs" />
+     <Compile Include="Assets\Time of Day\Assets\Scripts\TOD_Sky+Shader.cs" />
+     <Compile Include="Assets\Time of Day\Assets\Scripts\TOD_Sky+Unity.cs" />
+     <Compile Include="Assets\Time of Day\Assets\Scripts\TOD_Sky.cs" />
+     <Compile Include="Assets\Time of Day\Assets\Scripts\TOD_Time.cs" />
+     <Compile Include="Assets\Time of Day\Assets\Scripts\TOD_Util.cs" />
+     <Compile Include="Assets\Time of Day\Assets\Scripts\TOD_Weather.cs" />
+     <Compile Include="Assets\Time of Day\Examples\AudioAtDay.cs" />
+     <Compile Include="Assets\Time of Day\Examples\AudioAtNight.cs" />
+     <Compile Include="Assets\Time of Day\Examples\AudioAtTime.cs" />
+     <Compile Include="Assets\Time of Day\Examples\AudioAtWeather.cs" />
+     <Compile Include="Assets\Time of Day\Examples\LightAtDay.cs" />
+     <Compile Include="Assets\Time of Day\Examples\LightAtNight.cs" />
+     <Compile Include="Assets\Time of Day\Examples\LightAtTime.cs" />
+     <Compile Include="Assets\Time of Day\Examples\LightAtWeather.cs" />
+     <Compile Include="Assets\Time of Day\Examples\LoadSkyFromFile.cs" />
+     <Compile Include="Assets\Time of Day\Examples\ParticleAtDay.cs" />
+     <Compile Include="Assets\Time of Day\Examples\ParticleAtNight.cs" />
+     <Compile Include="Assets\Time of Day\Examples\ParticleAtTime.cs" />
+     <Compile Include="Assets\Time of Day\Examples\ParticleAtWeather.cs" />
+     <Compile Include="Assets\Time of Day\Examples\RenderAtDay.cs" />
+     <Compile Include="Assets\Time of Day\Examples\RenderAtNight.cs" />
+     <Compile Include="Assets\Time of Day\Examples\RenderAtWeather.cs" />
+     <Compile Include="Assets\scripts\DayTime.cs" />
+     <None Include="Assets\Cardboard\Legacy\Resources\SkyboxMesh.shader" />
+     <None Include="Assets\Plugins\donotdelete.txt" />
+     <None Include="Assets\Time of Day\Assets\Shaders\Cloud Shadow.shader" />
+     <None Include="Assets\Time of Day\Assets\Shaders\Moon.shader" />
+     <None Include="Assets\Time of Day\Assets\Shaders\Sun.shader" />
+     <None Include="Assets\Time of Day\Assets\Shaders\TOD_Base.cginc" />
+     <None Include="Assets\Plugins\Android\assets\donotdelete.txt" />
+     <None Include="Assets\Time of Day\Assets\Shaders\Space.shader" />
+     <None Include="Assets\Time of Day\Assets\Shaders\TOD_Scattering.cginc" />
+     <None Include="Assets\Plugins\x86_64\donotdelete.txt" />
+     <None Include="Assets\Time of Day\Assets\Shaders\Skybox.shader" />
+     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
+     <None Include="Assets\OVR\Shaders\TextShader3D.shader" />
+     <None Include="Assets\Time of Day\Assets\Shaders\PP God Rays.shader" />
+     <None Include="Assets\Time of Day\Assets\Shaders\Cloud Layer.shader" />
+     <None Include="Assets\Time of Day\Assets\Shaders\PP Screen Clear.shader" />
+     <None Include="Assets\Time of Day\Assets\Shaders\Space (Cube).shader" />
+     <None Include="Assets\OVR\Moonlight\Shaders\Unlit Crosshair.shader" />
+     <None Include="Assets\OVR\Shaders\Unlit Transparent HUD.shader" />
+     <None Include="Assets\Cardboard\Legacy\Resources\GUIScreen.shader" />
+     <None Include="Assets\Time of Day\Assets\Shaders\PP Scattering.shader" />
+     <None Include="Assets\Plugins\Android\AndroidManifest 1.xml" />
+     <None Include="Assets\Time of Day\Assets\Shaders\Atmosphere.shader" />
+     <None Include="Assets\Time of Day\Assets\Shaders\Cloud Billboard.shader" />
+     <None Include="Assets\OVR\Moonlight\Materials\GlobalMenu\OVRCutoutRamp.shader" />
+     <None Include="Assets\Plugins\Legacy\Android\AndroidManifest.xml" />
+     <None Include="Assets\OVR\Shaders\OVRGUIShader.shader" />
+     <None Include="Assets\Cardboard\Resources\RadialUndistortionEffect.shader" />
+     <None Include="Assets\Plugins\x86\donotdelete.txt" />
+     <None Include="Assets\Time of Day\Assets\Shaders\Clear Alpha.shader" />
+     <None Include="Assets\Cardboard\Resources\SolidColor.shader" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+ <HintPath>/Applications/Unity/Unity.app/Contents/PlaybackEngines/iossupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
